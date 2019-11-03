@@ -23,8 +23,8 @@ class SmsParser
     {
         $this->string = $string;
 
-        $this->findWallet();
         $this->findSum();
+        $this->findWallet();
         $this->findToken();
     }
 
