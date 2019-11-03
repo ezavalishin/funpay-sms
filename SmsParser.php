@@ -49,8 +49,7 @@ class SmsParser
             throw new SumNotFoundException();
         }
 
-        $this->sum = $matches[0];
-        $this->sum = (float)str_replace(',', '.', $this->sum);
+        $this->sum = (float)str_replace(',', '.', $matches[0]);
         $this->clearString($matches[0]);
     }
 
